@@ -1,0 +1,47 @@
+//today we gonna install sflow-rt tool in ubuntu 18.0 version . these tool capture real-life traffic along with there features ,can say little brother of wireshark //
+
+---lets begin----
+->sudo apt update
+->sudo apt install default-jre
+->wget https://inmon.com/products/sFlow-RT/sflow-rt_3.0-1696.deb
+->sudo dpkg -i sflow-rt_3.0-1696.deb
+->sudo systemctl enable sflow-rt
+->sudo systemctl start sflow-rt 
+
+
+# Update package information
+sudo apt update
+
+# Install default Java Runtime Environment (JRE)
+sudo apt install default-jre
+
+# Download the sFlow-RT package
+wget https://inmon.com/products/sFlow-RT/sflow-rt_3.0-1732.deb
+
+# Install the sFlow-RT package
+sudo dpkg -i sflow-rt_3.0-1732.deb
+
+# Enable sFlow-RT service to start on boot
+sudo systemctl enable sflow-rt
+
+# Start sFlow-RT service
+sudo systemctl start sflow-rt
+
+
+
+---to check the version of sflow rt----
+dpkg -l | grep sflow-rt
+
+---follow these---
+-> java --version
+->sudo -i
+->wget https://inmon.com/products/sFlow-RT/sflow-rt.tar.gz
+-> tar -zxvf sflow-rt.tar.gz
+->ls
+->cd sflow-rt
+->./get-app.sh sflow-rt mininet-dashboard
+->./start.sh
+
+
+
+
