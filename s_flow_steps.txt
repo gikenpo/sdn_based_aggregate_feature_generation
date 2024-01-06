@@ -42,6 +42,6 @@ dpkg -l | grep sflow-rt
 ->./get-app.sh sflow-rt mininet-dashboard
 ->./start.sh
 
-
-
+---to check the dashboard via browser---
+Use a web browser to connect to http://localhost:8008 to interact with the REST API.
 
